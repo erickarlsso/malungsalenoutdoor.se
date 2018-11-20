@@ -4,12 +4,12 @@ require('laravel-mix-purgecss');
 /*
  Set the public path where packed files are located
  */
-mix.setPublicPath('public');
+mix.setPublicPath('docs');
 
 /*
  Build CSS and purge unused CSS
  */
-mix.sass('src/sass/styles.scss', 'public/css')
+mix.sass('src/sass/styles.scss', 'docs/css')
   .purgeCss({
 
     // enabled: true,
@@ -30,10 +30,10 @@ mix.sass('src/sass/styles.scss', 'public/css')
  Build and bundle javascript files.
  Finaly copy index.html file
  */
-mix.js('src/js/main.js', 'public/js')
-  .copy('src/index.html', 'public/index.html')
-  .copy('src/js/googleAnalytics.js', 'public/js/googleAnalytics.js')
-  .copy('src/pages', 'public')
-  .copy('src/js/libs', 'public/js/libs');
+mix.js('src/js/main.js', 'docs/js')
+  .copy('src/index.html', 'docs/index.html')
+  .copy('src/js/googleAnalytics.js', 'docs/js/googleAnalytics.js')
+  .copy('src/pages', 'docs')
+  .copy('src/js/libs', 'docs/js/libs');
 
-mix.browserSync({"serveStatic":["./public"],"files":["./public"]});
+mix.browserSync({"serveStatic":["./docs"],"files":["./docs"]});

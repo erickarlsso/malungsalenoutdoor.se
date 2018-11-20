@@ -15,6 +15,7 @@
     "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^5.2.0",
     "laravel-mix": "^2.1.14",
-    "laravel-mix-purgecss": "^3.0.0"
+    "laravel-mix-purgecss": "^3.0.0",
+    "normalize.css": "^8.0.1"
   }
 }

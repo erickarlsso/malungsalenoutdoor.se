@@ -1,0 +1,17 @@
+html {
+  font-size: $root-font-size;
+  line-height: $root-line-height / $root-font-size;
+  overflow-y: scroll;
+  min-height: 100%;
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+body {
+  font-family: $global-font-family;
+  font-weight: $global-font-weight;
+  font-size: em($root-font-size);
+}

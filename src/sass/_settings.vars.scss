@@ -1,0 +1,40 @@
+/* root (scaling, typography, breakpoints etc) */
+$root-font-size:              16px;
+$root-line-height:            24px;
+
+/* colors */
+$global-colors: (
+  'primary': #9bc12c,
+  'primary--dark': darken(#9bc12c, 15%),
+  'primary--light': darken(#9bc12c, 15%),
+);
+
+@function color($key: 'color') {
+  @return map-get($global-colors, $key);
+}
+
+/* spacing */
+$global-baseline:             (($root-line-height / $root-font-size) * 1em) / 4;
+$global-spacings: (
+  'tiny': $global-baseline * 1,
+  'small': $global-baseline * 2,
+  'normal': $global-baseline * 4,
+  'large': $global-baseline * 8,
+  'huge': $global-baseline * 8,
+);
+
+@function spacing($key: 'spacing') {
+  @return map-get($global-spacings, $key);
+}
+
+$global-font-family:          'Montserrat', sans-serif;
+$global-font-weight:          400;
+
+$headings-font-family:        inherit;
+$headings-font-weight:        800;
+$headings-font-style:         normal;
+
+/* transitions */
+$global-duration:             333ms;
+$global-timing:               ease-in-out;
+$global-transition:           all $global-duration $global-timing;

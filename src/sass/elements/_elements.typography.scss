@@ -1,0 +1,18 @@
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  font-style: $headings-font-style;
+}
+
+a {
+  text-decoration: none;
+  transition: color $global-duration $global-timing;
+  color: color('primary');
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+hr { border-bottom: em(1px) solid black; }

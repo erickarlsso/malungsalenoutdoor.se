@@ -194,6 +194,8 @@ var featureTodo = new __WEBPACK_IMPORTED_MODULE_0_swiper__["a" /* default */]('.
 });
 
 /* fittext */
+window.fitText(document.getElementById('js-todoHeading'), 0.55);
+window.fitText(document.getElementById('js-todoSubHeading'), 1.39);
 window.fitText(document.getElementById('js-aboutHeading'), 0.5);
 
 /***/ }),

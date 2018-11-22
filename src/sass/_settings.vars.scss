@@ -7,6 +7,12 @@ $global-colors: (
   'primary': #9bc12c,
   'primary--dark': darken(#9bc12c, 15%),
   'primary--light': lighten(#9bc12c, 15%),
+  'secondary': #ffbf00,
+  'secondary--dark': darken(#ffbf00, 15%),
+  'secondary--light': lighten(#ffbf00, 15%),
+  'tertiary': #e83f6f,
+  'tertiary--dark': darken(#e83f6f, 15%),
+  'tertiary--light': lighten(#e83f6f, 15%),
 );
 
 @function color($key: 'color') {

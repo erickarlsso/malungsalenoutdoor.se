@@ -1,0 +1,93 @@
+.c-block {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  background-color: #000;
+  backface-visibility: hidden;
+
+  &__image {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.75;
+    transition: opacity 333ms;
+  }
+
+  &__link {
+    @include position(absolute, 0 null null 0);
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    @include position(absolute, 10% 10% 10% 10%);
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: spacing('normal');
+    text-transform: uppercase;
+    font-size: 1.25em;
+    color: #fff;
+
+    &::before,
+    &::after {
+      @include position(absolute, 30px 30px 30px 30px);
+  
+      content: '';
+      opacity: 0;
+      transition: opacity 333ms, transform 333ms;
+    }
+  
+    &::before {
+      border-top: 0.25em solid #fff;
+      border-bottom: 0.25em solid #fff;
+      transform: scale(0,1);
+    }
+  
+    &::after {
+      border-right: 0.25em solid #fff;
+      border-left: 0.25em solid #fff;
+      transform: scale(1,0);
+    }
+  }
+
+  &__link {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+  }
+
+  &__description {
+    margin: 0;
+    opacity: 0;
+    transition: opacity 333ms, transform 333ms;
+    letter-spacing: 0.0625em;
+    font-size: 75%;
+  }
+
+  &__title {
+    margin: 0;
+    transition: transform 333ms;
+  }
+
+  /* hover effects */
+  &:hover &__image { opacity: 0.25; }
+
+  &:hover &__title,
+  &:hover &__description { opacity: 1; }
+
+  &:hover &__content::before,
+  &:hover &__content::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

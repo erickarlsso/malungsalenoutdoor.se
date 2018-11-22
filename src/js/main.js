@@ -30,4 +30,6 @@ var featureTodo = new Swiper ('.c-swiper--home', {
 })
 
 /* fittext */
+window.fitText( document.getElementById('js-todoHeading',), 0.55 );
+window.fitText( document.getElementById('js-todoSubHeading',), 1.39 );
 window.fitText( document.getElementById('js-aboutHeading',), 0.5 );

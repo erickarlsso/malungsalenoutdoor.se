@@ -17,11 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-var featureTodo = new Swiper ('.c-swiper--home', {
+var featureTodo = new Swiper ('#js-todoSwipes', {
   /* modify classes */
-  slideActiveClass: 'c-swiper__slide--active',
-  virtualTranslate: true,
-  slideToClickedSlide: true,
 
   // And if we need scrollbar
   scrollbar: {

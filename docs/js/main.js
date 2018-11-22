@@ -181,11 +181,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-var featureTodo = new __WEBPACK_IMPORTED_MODULE_0_swiper__["a" /* default */]('.c-swiper--home', {
+var featureTodo = new __WEBPACK_IMPORTED_MODULE_0_swiper__["a" /* default */]('#js-todoSwipes', {
   /* modify classes */
-  slideActiveClass: 'c-swiper__slide--active',
-  virtualTranslate: true,
-  slideToClickedSlide: true,
 
   // And if we need scrollbar
   scrollbar: {

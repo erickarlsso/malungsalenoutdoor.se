@@ -31,91 +31,15 @@
 @import './utilities/utilities.text';
 @import './utilities/utilities.hide';
 
-.c-feature {
-  display: flex;
-  position: relative;
+.c-cover {
+  min-height: 60vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
 
-  &__column {
-    position: relative;
-    padding: spacing('huge');
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-
-  &__title {
-    margin: 0;
-    line-height: 1.5;
-    text-transform: uppercase;
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
-    font-style: $headings-font-style;
-  }
-
-  &__subtitle {
-    display: block;
-    text-transform: uppercase;
-    font-family: $headings-font-family;
-    font-weight: 500;
-    font-style: $headings-font-style;
-  }
-
-  &--intro {
-    padding: 0 spacing('large');
-    align-items: center;
-    height: 100vh;
-  }
-
-  &--todo {
-    .c-feature__column:nth-child(1) {
-      flex: none;
-      width: 35vw;
-    }
-
-    .c-feature__column:nth-child(2) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, auto);
-
-      .c-block:nth-child(1) {
-        grid-column: 1/3;
-        grid-row: 1/3;
-      }
-
-      .c-block:nth-child(5) {
-        grid-column: 2/4;
-        grid-row: 3/5;
-      }
-    }
-
-    .o-list {
-      li:nth-child(2) a { color: color('primary'); }
-      li:nth-child(2) a { color: color('secondary'); }
-      li:nth-child(3) a { color: color('tertiary'); }
-
-      a {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        font-family: $headings-font-family;
-        font-weight: 500;
-        font-style: $headings-font-style;
-        font-size: 1.25em;
-        line-height: spacing('large');
-      }
-
-      svg {
-        flex: none;
-        width: 1em;
-        margin-right: spacing('small');
-      }
-    }
-  }
-
-  &--about {
-    flex-flow: row-reverse nowrap;
-  }
+.c-article {
+  position: relative;
+  margin: 0 auto;
+  max-width: 72em;
 }

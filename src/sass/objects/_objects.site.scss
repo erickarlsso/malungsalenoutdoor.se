@@ -4,7 +4,6 @@
   overflow-x: hidden;
   overflow-y: scroll;
 
-  &__header,
   &__content {
     transition: transform $global-duration $global-timing;
   }
@@ -26,7 +25,6 @@
 }
 
 .navigation-is-visible .o-site {
-  &__header,
   &__content {
     transform: translate3d(-320px, 0, 0);
   }

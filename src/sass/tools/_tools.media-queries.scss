@@ -1,0 +1,53 @@
+
+// @include mq-from(tablet) {}
+@mixin mq-from($breakpoint) {
+  @if map-has-key($global-breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($global-breakpoints, $breakpoint);
+
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+// @include mq-until(laptop) {}
+@mixin mq-until($breakpoint) {
+  @if map-has-key($global-breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($global-breakpoints, $breakpoint);
+
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+// @include mq-between(laptop, desktop) {}
+@mixin mq-between($from, $until) {
+  @if map-has-key($global-breakpoints, $from) and map-has-key($global-breakpoints, $until) {
+    $from-breakpoint: map-get($global-breakpoints, $from);
+    $until-breakpoint: map-get($global-breakpoints, $until);
+
+    // Write the media query.
+    @media (min-width: $from-breakpoint) and (max-width: ($until-breakpoint - 1)) {
+      @content;
+    }
+  }
+
+  @else {
+    @if (map-has-key($global-breakpoints, $from) == false) {
+      @warn 'Your from breakpoint was invalid: #{$from}.';
+    }
+
+    @if (map-has-key($global-breakpoints, $until) == false) {
+      @warn 'Your until breakpoint was invalid: #{$until}.';
+    }
+  }
+}

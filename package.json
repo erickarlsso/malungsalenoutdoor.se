@@ -16,6 +16,7 @@
     "cross-env": "^5.2.0",
     "laravel-mix": "^2.1.14",
     "laravel-mix-purgecss": "^3.0.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^4.4.2"
   }
 }

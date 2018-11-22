@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">	
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     
 		<meta name="description" content="Description of the page less than 150 characters">
 
@@ -13,51 +13,174 @@
 
 		<meta name="msapplication-config" content="browserconfig.xml">
 
-		<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nez2gcx.css">
 
 		<title>Välkommen till Malung-Sälen i Sommar! | Malung-Sälen Outdoor</title>
 	</head>		
 
 	<body class="home">
-    <div class="o-site" role="document">
-      <header id="js-header" class="o-site__header c-header" role="banner">
-        <section class="c-header__secondary">
-          <ul class="c-header__menu c-header__menu--small o-list o-list--inline">
-            <li><a href="http://salenfjallen.se">Malung-Sälens Kommun</a></li>
-            <li><a href="http://salenfjallen.se">Sälenfjällen</a></li>
-          </ul>
-        </section>
-        <section class="c-header__primary">
-          <div class="c-header__logo">
-            <a href="#">
-              <img src="imgs/logo-salensommar_square.svg">
-            </a>
-          </div>
-
-          <nav class="c-header__nav">
-            <ul class="c-header__menu">
-              <li><a href="#">Hem</a></li>
-              <li><a href="#">Boende</a></li>
-              <li><a href="#">Att Göra</a></li>
-              <li><a href="#">Evenemang</a></li>
-              <li><a href="#">Om</a></li>
-            </ul>
-            <button class="c-button c-header__nav-toggle" data-toggle="navigation" role="button">
-              Meny
-            </button>
-          </nav>
-        </section>
-      </header>
-      <div class="o-site__content">
-        <main role="main">
-          <section class="c-feature c-feature--intro" style="background-image: url('../imgs/teddy-kelley-194162-unsplash.jpg');">
-    
-          </section>
-        </main>
-        <footer role="content-info"></footer>
+    <header id="js-header" class="o-site__header c-header" role="banner">
+      <div class="c-header__logo">
+        <a href="#">
+            <img src="imgs/logo-salensommar_square.svg">
+        </a>
       </div>
-      <nav id="js-navigation" class="o-site__navigation c-navigation" role="navigation"></nav>
+      <nav class="c-header__nav">
+        <a class="c-hamburger c-header__hamburger" data-toggle="navigation" role="button">
+          <div class="c-hamburger__text u-hidden-visually">Meny</div>
+          <div class="c-hamburger__icon"></div>
+        </a>
+        <a class="c-header__button" href="#">
+          <img src="imgs/search-solid.svg">
+        </a>
+        <a class="c-header__button" href="#">English</a>
+      </nav>
+    </header>
+    <div class="o-site" role="document">
+      <main class="o-site__content">
+        <section class="c-swiper c-swiper--home">
+          <!-- Additional required wrapper -->
+          <div class="c-swiper__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="c-swiper__slide c-swiper__slide--intro swiper-slide" style="background-image:url('../imgs/teddy-kelley-194162-unsplash.jpg')">
+                <article>
+                  <h1 class="c-feature__title">
+                    <span id="js-introFirstLine">Välkommen till</span>
+                    <span id="js-introSecondLine">Malung-Sälen</span>
+                    <span id="js-introThirdLine">i Sommar</span>
+                  </h1>
+                </article>
+              </div>
+              <div class="c-swiper__slide c-swiper__slide--todo swiper-slide">
+                <div class="c-swiper__overlay">
+                  Att Göra
+                  <span>Läs mer</span>
+                </div>
+              </div>
+              <div class="c-swiper__slide c-swiper__slide--events swiper-slide">
+                <div class="c-swiper__overlay">
+                  Evenemang
+                  <span>Läs mer</span>
+                </div>
+              </div>
+          </div>
+          <!-- If we need pagination
+            <div class="c-swiper__pagination swiper-pagination"></div>
+          -->
+
+          <!-- If we need navigation buttons
+            <div class="c-swiper__button c-swiper__button--prev swiper-button-prev"></div>
+            <div class="c-swiper__button c-swiper__button--next swiper-button-next"></div>
+          -->
+
+          <!-- If we need scrollbar -->
+          <div class="c-swiper__scrollbar swiper-scrollbar"></div>
+        </section>
+
+        <section class="c-feature c-feature--todo">
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+          <figure class="c-block">
+            <img class="c-block__image" src="imgs/david-henrichs-377322-unsplash.jpg">
+            <figcaption class="c-block__content">
+              <h3 class="c-block__title">Cykling</h3>
+              <p>Läs mer om Cykling</p>
+              <a class="c-block__link" href="#">Läs mer</a>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="c-feature c-feature--about">
+          <div class="c-feature__column">
+            <h2 id="js-aboutHeading" class="c-feature__title">Området</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla fringilla nisl, et ultrices lorem viverra non. 
+              Pellentesque id pellentesque purus. Maecenas vestibulum placerat sapien eu egestas. Phasellus luctus sed sapien non viverra. 
+              Phasellus aliquam et magna eget sollicitudin. Fusce in tempor augue. Sed sit amet ligula risus. Vivamus facilisis massa sed 
+              nisl viverra scelerisque. Phasellus pharetra mattis finibus. Nullam sollicitudin non dui ac tempor.
+            </p>
+            <a class="c-button c-button--large" href="#">Mat & Logi</a>
+            <a class="c-button c-button--large" href="#">Resa</a>
+          </div>
+          <div class="c-feature__column">
+            <img src="https://via.placeholder.com/1000.png?text=INTERAKTIV%20KARTA" alt="">
+          </div>
+        </section>
+      </main>
     </div>
+    <footer role="content-info"></footer>
+    <nav id="js-navigation" class="o-site__navigation c-navigation" role="navigation"></nav>
     <script src="js/main.js"></script>
 	</body>
 </html>

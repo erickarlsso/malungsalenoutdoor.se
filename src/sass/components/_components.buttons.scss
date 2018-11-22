@@ -1,0 +1,13 @@
+.c-button {
+  padding: spacing('small') spacing('large');
+  text-transform: uppercase;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  font-style: $headings-font-style;
+  display: inline-block;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: color('primary');
+  border-radius: 0.125em;
+}

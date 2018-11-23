@@ -18,12 +18,14 @@
 
 /* objects */
 @import './objects/objects.site';
+@import './objects/objects.grid';
 @import './objects/objects.lists';
 
 /* components */
 @import './components/components.header';
 @import './components/components.blocks';
 @import './components/components.swiper';
+@import './components/components.features';
 @import './components/components.buttons';
 @import './components/components.hamburger';
 
@@ -31,15 +33,6 @@
 @import './utilities/utilities.text';
 @import './utilities/utilities.hide';
 
-.c-cover {
-  min-height: 60vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.c-article {
-  position: relative;
-  margin: 0 auto;
-  max-width: 72em;
+body:not(.home) {
+  .c-header { background-color: color('primary'); }
 }

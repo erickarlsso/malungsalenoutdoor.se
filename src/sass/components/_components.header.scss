@@ -5,7 +5,10 @@
   flex-flow: row nowrap;
   padding: spacing('normal') spacing('normal');
   min-height: 5em;
+  transition: background-color 222ms linear;
   z-index: 999;
+
+  &--sticky { background-color: color('primary'); }
 
   &__logo {
     img {

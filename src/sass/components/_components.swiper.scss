@@ -1,0 +1,66 @@
+.c-swiper {
+
+  &__parallax-bg {
+    @include position(absolute, 0 null null 0);
+
+    width: 130vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__slide { overflow: hidden; }
+
+  &__controls {
+    @include position(absolute, null spacing('large') spacing('large') null);
+
+    display: flex;
+  }
+
+  &__button {
+    display: block;
+    padding: (spacing('tiny') / 4) spacing('tiny');
+    margin-left: spacing('tiny');
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    font-style: $headings-font-style;
+    font-size: spacing('large');
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(#000, 0.9);
+    transition: opacity 222ms;
+    z-index: 99;
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__promo {
+    @include position(absolute, 50% 0 null null);
+
+    display: flex;
+    max-width: 33.3333vw;
+    max-height: 25vh;
+    background-color: #000;
+    transform: translate3d(50%, -50%, 0);
+
+    > div {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      padding: spacing('large');
+    }
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    span:nth-child(1) {
+      color: rgba(#fff, 0.75);
+    }
+  }
+}

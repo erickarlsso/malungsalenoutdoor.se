@@ -10,4 +10,8 @@
 
     li { padding: 0 spacing('small'); }
   }
+
+  li & {
+    padding-left: spacing('small');
+  }
 }

@@ -177,6 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
       el.addEventListener('click', function () {
         oSite.classList.toggle('o-site--navigation-is-visible');
         el.classList.toggle('c-hamburger--is-active');
+        document.getElementsByTagName('html')[0].classList.toggle('overflow-hidden');
       });
     });
   }
@@ -215,8 +216,11 @@ document.addEventListener('DOMContentLoaded', function () {
   window.fitText(document.getElementById('js-featureIntroThree'), 3.95);
 
   // .c-feature--todo
-  window.fitText(document.getElementById('js-featureTodoFour'), 0.525);
-  window.fitText(document.getElementById('js-featureTodoFive'), 1);
+  window.fitText(document.getElementById('js-featureIntroFour'), 1.5);
+
+  // .c-feature--bloggers
+  window.fitText(document.getElementById('js-featureBlogOne'), 0.55);
+  window.fitText(document.getElementById('js-featureBlogTwo'), 1);
 });
 
 /***/ }),

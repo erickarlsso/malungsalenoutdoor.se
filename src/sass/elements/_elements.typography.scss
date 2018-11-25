@@ -7,7 +7,7 @@ h4, h5, h6 {
 
 a {
   text-decoration: none;
-  transition: color $global-duration $global-timing;
+  transition: color ($global-duration / 2) $global-timing;
   color: color('primary');
 
   &:hover {

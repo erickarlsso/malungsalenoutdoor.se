@@ -1,8 +1,10 @@
 .c-header {
-  @include position(fixed, 0 0 null 0);
+  @include position(fixed, 0 null null 0);
 
+  width: auto;
   display: flex;
   flex-flow: row nowrap;
+  align-content: flex-start;
   padding: spacing('normal') spacing('normal');
   min-height: 5em;
   transition: background-color 222ms linear;

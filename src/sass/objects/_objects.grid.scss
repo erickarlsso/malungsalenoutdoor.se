@@ -1,4 +1,6 @@
 .o-grid {
+  width: 100%;
+  
   @include mq-from(tablet) {
     display: flex;
   }
